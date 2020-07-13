@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src = "index.js">
+    </script> 
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Bienvenido</h1>
+        <p class="lead">Inserte numeros de tickets, classificación y precio.</p>
+        <hr class="my-4">
+        <p>Luego, deslize hacia abajo, y tome una captura de la pantalla incluyendo los detalles añadidos.</p>
+        <p>Si tiene alguna pregunta, comuniquese conmigo.</p>
+      </div>
+  
+  <div class="container">
+  <!-- Group to add input values -->
+  <div class="container buttons">
+  <button type="button" ticketType="Q" class="btn btn-primary typeBtn">Q</button>
+  <button type="button" ticketType="Pale" class="btn btn-secondary typeBtn">Pale</button>
+  <button type="button" ticketType="NAC PM" class="btn btn-success typeBtn">NAC PM</button>
+  <button type="button" ticketType="NAC AM" class="btn btn-warning typeBtn">NAC AM</button>
+</div>
+<form>
+  <div class="form-group">
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">Nombre</span>
+    </div>
+    <input type="text" class="form-control" id="nombre" placeholder="Nombre de cliente" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">#</span>
+    </div>
+    <input type="text" class="form-control" id="numero" placeholder="Numero" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  
+  <label for="basic-url">Tipo de Ticket</label>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Q/Pale</span>
+    </div>
+    <input type="text" class="form-control" id="type" placeholder="Q/P" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">$</span>
+    </div>
+    <input type="text" id="precio" class="form-control" aria-label="Amount (to the nearest dollar)">
+    <div class="input-group-append">
+      <span class="input-group-text">.00</span>
+    </div>
+  </div>
+</div>
+<button type="submit" class="btn btn-primary" id="mainBtn">Añadir Ticket</button>
+</form>
+  
+
+</div>
+
+
+
+
+
+  <!-- Area for output -->
+
+  <div class="container output">
+<!-- <h1>Tome Captura</h1> -->
+<div id="nombreElement"></div>
+<h3>Ticket #:4183</h3>
+<div id="serial"></div>
+
+<div id="date"></div>
+
+<table class="table" id="ticket-table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Q/Pale</th>
+        <th scope="col">Numero</th>
+        <th scope="col">Precio</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</div>
+</body>
+
+
+</html>
