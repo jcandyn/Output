@@ -13,14 +13,17 @@
 
 #primera {
     background-color: #23658C;
+    color: white;
 }
 
 #nyDia {
     background-color: #2A718F;
+    color: white;
 }
 
 #realAm {
     background-color: #307C92;
+    color: white;
 }
 
 #spRe {
@@ -30,23 +33,27 @@
 
 #tvAm {
     background-color: #3D9498;
+    color: white;
 }
 
 #ganaMas {
     background-color: #44A09C;
+    color: white;
 }
 
 #ltka {
 background-color: #4AAC9D;
+color: white;
 }
 
 #nyNoche {
 background-color: #50B7A0;
+color: white;
 }
 
 #spLe {
     background-color: #56C3A4;
-    color: #6F7072;
+    color: white;
 }
 
 #qPale {
@@ -64,7 +71,33 @@ background-color: #50B7A0;
     color: #4D4D4F;
 }
 
-.typeBtn {
-    width: 20%;
-    height: 120%;
-}
+/* .typeBtn {
+    width: 30%;
+    height: 80%;
+} */
+
+.c-btn-group {
+    display: inline-flex;
+    border: 1px solid rgb(97, 97, 97);
+    overflow: hidden;
+    border-radius: 4px;  
+    margin: 2%;
+  }
+  .c-btn-group > .btn {
+    border-radius: 0;
+    border: none;
+    border-right: 1px solid rgb(97, 97, 97);
+  }
+  .c-btn-group > .c-btn:last-child {
+    border-right: none;
+  }
+  .c-btn-group--block {
+    display: flex;
+  }
+  .c-btn-group--block > .btn {
+    flex-grow: 1;
+  }
+  
+
+  
+ 
