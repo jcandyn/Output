@@ -3,9 +3,6 @@
     margin-bottom: 300px;
 }
 
-.buttons {
-    margin-bottom: 3%;
-}
 
 .btnGroup {
     margin-bottom: 2%;
@@ -76,27 +73,44 @@ color: white;
     height: 80%;
 } */
 
-.c-btn-group {
-    display: inline-flex;
-    border: 1px solid rgb(97, 97, 97);
-    overflow: hidden;
-    border-radius: 4px;  
-    margin: 2%;
+.btn-group>.btn-lg+.dropdown-toggle 
+{
+  padding: 10px 14px;
+  border-left: 1px solid white;
+}
+
+@media (max-width: 768px)
+{
+  .btn-container
+	{
+		padding-right: 0;
+		padding-left: 0;
+	}
+  .btn-container-primary
+  {
+    margin-bottom: 15px; /* separates the buttons when they stack on mobile */
   }
-  .c-btn-group > .btn {
-    border-radius: 0;
-    border: none;
-    border-right: 1px solid rgb(97, 97, 97);
-  }
-  .c-btn-group > .c-btn:last-child {
-    border-right: none;
-  }
-  .c-btn-group--block {
-    display: flex;
-  }
-  .c-btn-group--block > .btn {
-    flex-grow: 1;
-  }
+}
+
+.btn-container
+{
+	padding-right: 0;
+}
+
+
+@media (max-width: 968px) and (min-width: 769px)
+{
+	.btn-container-primary
+	{
+		padding-right: 0;
+		padding-left: 7.5px;
+	}
+	.btn-container-secondary
+	{
+		padding-right: 7.5px;
+		padding-left: 0;
+	}
+}
   
 
   
