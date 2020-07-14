@@ -57,10 +57,10 @@ function generateSerial() {
 function addRow(count,type,numero,precio,nombre) {
   
  
-    if (nombre.length !== 0) {
-    var nombreDiv = $("h1").text(nombre);
-    };
-    $("#nombreElement").append(nombreDiv);
+    // if (nombre.length !== 0) {
+    // var nombreDiv = $("h1").text(nombre);
+    // };
+    // $("#nombreElement").append(nombreDiv);
 
   var newRow = $("<tr>").append(
     $("<th>").text(count).attr("scope","row"),

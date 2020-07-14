@@ -21,20 +21,39 @@
   
   <div class="container">
   <!-- Group to add input values -->
-  <div class="container buttons">
-  <button type="button" ticketType="Q" class="btn btn-primary typeBtn">Q</button>
-  <button type="button" ticketType="Pale" class="btn btn-secondary typeBtn">Pale</button>
-  <button type="button" ticketType="NAC PM" class="btn btn-success typeBtn">NAC PM</button>
-  <button type="button" ticketType="NAC AM" class="btn btn-warning typeBtn">NAC AM</button>
+  <div class="container row buttons">
+    <div class="col-md-12 btnGroup">
+      <button type="button" id="primera" ticketType="Primera" class="btn btn-secondary typeBtn">PRIMERA</button>
+      <button type="button" id="nyDia" ticketType="NY DIA" class="btn btn-secondary typeBtn">NY DIA</button>
+      <button type="button" id="realAm" ticketType="REAL AM" class="btn btn-secondary typeBtn">REAL AM</button>
+      <button type="button" id="spRe" ticketType="SP NA/RE" class="btn btn-secondary typeBtn">SP NA/RE</button>
+    </div>
+  
+    <div class="col-md-12 btnGroup">
+  <button type="button" id="tvAm" ticketType="TV AM" class="btn btn-secondary typeBtn">TV AM</button>
+  <button type="button" id="ganaMas" ticketType="GANA-MAS" class="btn btn-secondary typeBtn">GANA-MAS</button>
+  <button type="button" id="ltka" ticketType="LTKA" class="btn btn-secondary typeBtn">LTKA</button>
+  <button type="button" id="nyNoche" ticketType="NY NOCHE" class="btn btn-secondary typeBtn">NY NOCHE</button>
+  </div>
+
+  <div class="col-md-12 btnGroup">
+  <button type="button" id="spLe" spNoticketType="SP NA/LE" class="btn btn-secondary typeBtn">SP NA/lE</button>
+  <button type="button" id="qPale" ticketType="Q.PALE" class="btn btn-secondary typeBtn">Q.PALE</button>
+  <button type="button" id="nacPm" ticketType="NAC PM" class="btn btn-secondary typeBtn">NAC PM</button>
+  <button type="button" id="tvPm" ticketType="TV PM" class="btn btn-secondary typeBtn">TV PM</button>
+  </div>
 </div>
+<div class="container">
+<div class="row">
+  <div class="col-md-12">
 <form>
   <div class="form-group">
-  <div class="input-group mb-3">
+  <!-- <div class="input-group mb-2">
     <div class="input-group-prepend">
       <span class="input-group-text" id="basic-addon1">Nombre</span>
     </div>
     <input type="text" class="form-control" id="nombre" placeholder="Nombre de cliente" aria-label="Username" aria-describedby="basic-addon1">
-  </div>
+  </div> -->
   
   <div class="input-group mb-3">
     <div class="input-group-prepend">
@@ -44,14 +63,14 @@
   </div>
   
   <label for="basic-url">Tipo de Ticket</label>
-  <div class="input-group mb-3">
+  <div class="input-group mb-2">
     <div class="input-group-prepend">
       <span class="input-group-text">Q/Pale</span>
     </div>
     <input type="text" class="form-control" id="type" placeholder="Q/P" aria-label="Username" aria-describedby="basic-addon1">
   </div>
   
-  <div class="input-group mb-3">
+  <div class="input-group mb-2">
     <div class="input-group-prepend">
       <span class="input-group-text">$</span>
     </div>
@@ -61,12 +80,12 @@
     </div>
   </div>
 </div>
-<button type="submit" class="btn btn-primary" id="mainBtn">Añadir Ticket</button>
+<button type="submit" class="btn btn-secondary" id="mainBtn">Añadir Ticket</button>
 </form>
-  
-
 </div>
-
+</div>
+</div>
+</div>
 
 
 
@@ -74,8 +93,10 @@
   <!-- Area for output -->
 
   <div class="container output">
+    <div class="row">
+      <div class="col">
 <!-- <h1>Tome Captura</h1> -->
-<div id="nombreElement"></div>
+<div id="nombreElement">Jorge</div>
 <h3>Ticket #:4183</h3>
 <div id="serial"></div>
 
@@ -94,7 +115,8 @@
     </tbody>
   </table>
 </div>
+</div>
 </body>
-
+</div>
 
 </html>

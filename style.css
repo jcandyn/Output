@@ -6,3 +6,60 @@
 .buttons {
     margin-bottom: 30px;
 }
+
+.btnGroup {
+    margin-bottom: 10px;
+}
+
+#primera {
+    background-color: #23658C;
+}
+
+#nyDia {
+    background-color: #2A718F;
+}
+
+#realAm {
+    background-color: #307C92;
+}
+
+#spRe {
+    background-color: #378895;
+    color: white;
+}
+
+#tvAm {
+    background-color: #3D9498;
+}
+
+#ganaMas {
+    background-color: #44A09C;
+}
+
+#ltka {
+background-color: #4AAC9D;
+}
+
+#nyNoche {
+background-color: #50B7A0;
+}
+
+#spLe {
+    background-color: #56C3A4;
+    color: #6F7072;
+}
+
+#qPale {
+    background-color: #5DD0A6;
+    color: #656567;
+}
+
+#nacPm {
+    background-color: #62DAA9;
+    color: #595A5B;
+}
+
+#tvPm {
+    background-color: #68E6AD;
+    color: #4D4D4F;
+}
