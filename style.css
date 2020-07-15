@@ -1,159 +1,3 @@
-/* Colours */
-.red {
-    background-color: #d55050;
-}
-.teal {
-    background-color: #50d5a1;
-}
-.sky {
-    background-color: #6698cb;
-}
-.black {
-    background-color: #5c6166;
-}
-.gray {
-    color: black;
-    background-color: #d2d2d2;
-}
-.orange {
-    background-color: #e96633;
-}
-.pink {
-    background-color: #cb99c5;
-}
-.green {
-    background-color: #5bbd72;
-}
-.blue {
-    background-color: #7abedf;
-}
-.yellow {
-    background-color: #ecc92b;
-}
-.purple {
-    background-color: #564f8a;
-}
-
-
-
-
-.output {
-    margin-top: 500px;
-    margin-bottom: 300px;
-}
-
-
-.btnGroup {
-    margin-bottom: 2%;
-}
-
-#primera {
-    background-color: #23658C;
-    color: white;
-}
-
-#nyDia {
-    background-color: #2A718F;
-    color: white;
-}
-
-#realAm {
-    background-color: #307C92;
-    color: white;
-}
-
-#spRe {
-    background-color: #378895;
-    color: white;
-}
-
-#tvAm {
-    background-color: #3D9498;
-    color: white;
-}
-
-#ganaMas {
-    background-color: #44A09C;
-    color: white;
-}
-
-#ltka {
-background-color: #4AAC9D;
-color: white;
-}
-
-#nyNoche {
-background-color: #50B7A0;
-color: white;
-}
-
-#spLe {
-    background-color: #56C3A4;
-    color: white;
-}
-
-#qPale {
-    background-color: #5DD0A6;
-    color: #656567;
-}
-
-#nacPm {
-    background-color: #62DAA9;
-    color: #595A5B;
-}
-
-#tvPm {
-    background-color: #68E6AD;
-    color: #4D4D4F;
-}
-
-/* .typeBtn {
-    width: 30%;
-    height: 80%;
-} */
-
-.btn-group>.btn-lg+.dropdown-toggle 
-{
-  padding: 10px 14px;
-  border-left: 1px solid white;
-}
-
-@media (max-width: 768px)
-{
-  .btn-container
-	{
-		padding-right: 0;
-		padding-left: 0;
-	}
-  .btn-container-primary
-  {
-    margin-bottom: 15px; /* separates the buttons when they stack on mobile */
-  }
-}
-
-.btn-container
-{
-	padding-right: 0;
-}
-
-
-@media (max-width: 968px) and (min-width: 769px)
-{
-	.btn-container-primary
-	{
-		padding-right: 0;
-		padding-left: 7.5px;
-	}
-	.btn-container-secondary
-	{
-		padding-right: 7.5px;
-		padding-left: 0;
-	}
-}
-  
-
-  
- 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400, 300, 600, 700);
 
 html {
@@ -205,3 +49,44 @@ h1 {
 }
 
 
+/* Colours */
+.red {
+    background-color: #d55050;
+}
+.teal {
+    background-color: #50d5a1;
+}
+.sky {
+    background-color: #6698cb;
+}
+.black {
+    background-color: #5c6166;
+}
+.gray {
+    color: black;
+    background-color: #d2d2d2;
+}
+.orange {
+    background-color: #e96633;
+}
+.pink {
+    background-color: #cb99c5;
+}
+.green {
+    background-color: #5bbd72;
+}
+.blue {
+    background-color: #7abedf;
+}
+.yellow {
+    background-color: #ecc92b;
+}
+.purple {
+    background-color: #564f8a;
+}
+
+@media only screen and (min-width: 768px) {
+    .btn {
+        width:25%;
+    }
+}
