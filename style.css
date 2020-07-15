@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400, 300, 600, 700);
+
 
 html {
   font-family: "Open Sans", sans-serif;
@@ -12,8 +12,8 @@ h1 {
     padding: 1em 2.1em 1.1em;
     border-radius: 3px;
     margin: 8px 8px 8px 8px;
-    color: #fbdedb;
-    background-color: #fbdedb;
+    color: #fbdedb !important;
+    background-color: #fbdedb ;
     display: inline-block;
     background: #e74c3c;
     -webkit-transition: 0.3s;
@@ -48,45 +48,59 @@ h1 {
   border-radius: 50em !important;
 }
 
-
+.normal {
+    background-color: #e74c3c;
+}
 /* Colours */
 .red {
     background-color: #d55050;
+    color: #fbdedb !important;
 }
 .teal {
     background-color: #50d5a1;
+    color: black !important;
 }
 .sky {
     background-color: #6698cb;
+    color: #fbdedb !important;
 }
 .black {
     background-color: #5c6166;
+    color: white !important;
 }
 .gray {
-    color: black;
+    color: black !important;
     background-color: #d2d2d2;
 }
 .orange {
     background-color: #e96633;
+    color: #fbdedb !important;
 }
 .pink {
     background-color: #cb99c5;
+    color: #fbdedb !important;
 }
 .green {
     background-color: #5bbd72;
+    color: #fbdedb !important;
 }
 .blue {
     background-color: #7abedf;
+    color: #fbdedb !important;
 }
 .yellow {
     background-color: #ecc92b;
+    color: black !important;
 }
 .purple {
     background-color: #564f8a;
+    color: #fbdedb !important;
 }
 
 @media only screen and (min-width: 768px) {
     .btn {
         width:25%;
+        height: auto;
+        font-size: 2rem;
     }
 }
