@@ -105,8 +105,12 @@
 
 <div id="date"></div>
 
+<hr class="hr-13">
+
+
+<h2 id="typeTicketText"></h2>
 <table class="table" id="ticket-table">
-    <thead>
+    <thead class="thead-dark">
       <tr>
         <th scope="col">#</th>
         <th scope="col">Q/Pale</th>
@@ -114,8 +118,18 @@
         <th scope="col">Precio</th>
       </tr>
     </thead>
-    <tbody>
-    </tbody>
+    <tbody class="table-striped"></tbody>
+  </tbody>
+    <tfoot>
+      <tr>
+        <td>Tickets Total: </td>
+      <td><span id="totalCount"></span></td>
+        <td>Precio Total: </td>
+        <td id="totalPrice"></td>
+      </tr>
+    </tfoot>
+  
+ 
   </table>
 </div>
 </div>

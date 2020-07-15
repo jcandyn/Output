@@ -123,18 +123,19 @@ margin: 1rem;
       }
 
       .form-group {
-        font-size: 2rem;
+        font-size: 3rem;
       }
 
       .form-control {
           height: auto;
-          font-size: 2rem;
+          font-size: 3rem;
 
       }
 
       .output {
           font-size: 3rem;
-          margin-top: 6rem;
+          margin-top: 50rem;
+          margin-bottom: 100rem;
       }
 
       #nombreElement {
@@ -158,4 +159,10 @@ margin: 1rem;
     width:auto;
     height: auto;
     font-size: 1rem;
+  }
+
+  hr.hr-13 {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8c8c inset;
   }

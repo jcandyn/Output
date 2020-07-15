@@ -2,6 +2,8 @@
 
   $( document ).ready(function() {
     let count = 0;
+   
+    let newPrecio = 0;
     $( "#mainBtn").on( "click", function(event) {
         event.preventDefault();
         if (count == 0) {
@@ -9,16 +11,25 @@
         date();
         }
         count++
+        $("#totalCount").text(count);
         let type = $("#type").val().toUpperCase();
         let nombre = $("#nombre").val();
         let numero = $("#numero").val();
         let precio = $("#precio").val();
+        newPrecio = (Number(newPrecio) + Number(precio));
+       $("#totalPrice").text("$" + newPrecio + ".00");
        
         addRow(count,type,numero,precio,nombre);
       });
 
       $(".typeBtn").on( "click", function() {
-        alert($(this).attr("ticketType"))
+        let ticketTypeText = $(this).attr("ticketType")
+        $("#typeTicketText").text(ticketTypeText);
+
+      
+    // var ticketTypeTextDiv = $("h2").text(ticketTypeText);
+  
+    // $("#typeTicketText").append(ticketTypeTextDiv);
       });
 
   
