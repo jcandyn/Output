@@ -96,16 +96,16 @@ html {
       box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset; */
       position: relative;
   }
-  .btn:hover, .btn:focus {
+  /* .btn:hover, .btn:focus {
       opacity: 0.8;
-  }
-  .btn:active {
+  } */
+  /* .btn:active {
       -webkit-transform: scale(0.80);
       -moz-transform: scale(0.80);
       -ms-transform: scale(0.80);
       -o-transform: scale(0.80);
       transform: scale(0.80);
-  }
+  } */
   .btn.block {
       display: block !important;
   }
