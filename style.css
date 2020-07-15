@@ -132,6 +132,10 @@ margin: 1rem;
 
       }
 
+      .input-group-text {
+        font-size: 3rem;
+      }
+
       .output {
           font-size: 6rem;
           margin-top: 50rem;
