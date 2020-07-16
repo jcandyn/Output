@@ -1,7 +1,11 @@
 
 
-  $( document ).ready(function() {
 
+  $( document ).ready(function() {
+   readDatabase();
+  
+
+    date();
     currentTime();
     let count = 0;
    
@@ -10,7 +14,7 @@
         event.preventDefault();
         if (count == 0) {
         generateSerial();
-        date();
+      
         }
         count++
         $("#totalCount").text(count);
@@ -125,7 +129,7 @@ var today = new Date();
 
 var n = today.getDay();
 
-var dayDiv = $("h2").text(days[n]);
+var dayDiv = $("#day").text(days[n]);
 $("#day").append(dayDiv);
 
 var day = today.getDate();
@@ -141,6 +145,30 @@ if (month < 10) {
 
 var out = document.getElementById("date");
 
-out.innerHTML = month + "/" + day + "/" + year;
+out.innerHTML = month + "-" + day + "-" + year;
 };
 
+function writeUserData(ticketNumber) {
+  firebase.database().ref().set({
+    ticketNumber: ticketNumber
+  });
+}
+
+
+function readDatabase() {
+
+firebase.database().ref().once('value').then(function(snapshot) {
+        var ticketNumber= snapshot.val().ticketNumber;
+  
+      
+       writeUserData((ticketNumber + 1));
+updateTicketNumber(ticketNumber + 1);
+    });
+  
+}
+
+
+function updateTicketNumber(ticketNumber) {
+ 
+$("#ticketNumber").text("Ticket #: " + ticketNumber);
+}

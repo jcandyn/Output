@@ -9,8 +9,35 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-database.js"></script>
+
 <script src = "index.js">
-    </script> 
+</script> 
+
+<script>
+
+var firebaseConfig = {
+    apiKey: "AIzaSyDyU6zc9aCCJNKLrWtQ4hb08zk9CDh-ccY",
+    authDomain: "output-23def.firebaseapp.com",
+    databaseURL: "https://output-23def.firebaseio.com",
+    projectId: "output-23def",
+    storageBucket: "output-23def.appspot.com",
+    messagingSenderId: "53165627483",
+    appId: "1:53165627483:web:acb936bcec6a837186477e",
+    measurementId: "G-8F9MGZWMD2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script> 
 <body>
 
 
@@ -96,22 +123,31 @@
 
 
   <div class="container output">
+    <div class="info">
     <div class="row">
-      <div class="col">
+      <div class="col-md-8">
         <h1 id="nombreElement">Jorge</h1>
-        <h3>Ticket #:4183</h3>
+        <h3>T-9198</h3>
+     <h3 id="ticketNumber"></h3>
         <div id="serial"></div>
-        
+      </div>
+
+     
+      <div class="col-md-4">
+        <div class="row">
+          <div id="clock"></div>
+        </div>
+       <div class="row">
+        <h2 id="day"></h2>
+      </div>
+        <div class="row">
         <div id="date"></div>
+        </div>
       </div>
+    </div>
+     
+     
 
-      <div class="col">
-        <div id="clock"></div>
-
-      </div>
-      <div class="col">
-        <div id="day"></div>
-      </div>
     </div>
 
       <div class="col">
