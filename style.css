@@ -5,6 +5,8 @@
     color: white !important;
 }
 
+
+
 #nyDia {
     background-color: #2A718F;
     color: white !important;
@@ -114,7 +116,12 @@ html {
 margin: 1rem;
   }
 
+  .jumbotron {
+    background-image: url("https://cdn.pixabay.com/photo/2017/09/16/16/09/sea-2755908_960_720.jpg");
+    background-size: cover;
+  }
 
+  
   
   @media only screen and (min-width: 768px) {
       .btn {
@@ -123,6 +130,8 @@ margin: 1rem;
           font-size: 2rem;
          
       }
+
+   
 
       .form-group {
         font-size: 3rem;
@@ -182,6 +191,9 @@ margin: 1rem;
 
       #typeTicketText {
         font-weight:700; 
+        font-size:3rem;
+        margin: 0 auto;
+        padding-bottom: 2rem;
       }
 
 
@@ -193,4 +205,6 @@ margin: 1rem;
 
   
 
-  
+  .typeBtn:focus {
+    background-color: red !important;
+  }
