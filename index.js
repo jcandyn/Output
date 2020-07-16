@@ -1,6 +1,8 @@
 
 
   $( document ).ready(function() {
+
+    currentTime();
     let count = 0;
    
     let newPrecio = 0;
@@ -93,9 +95,38 @@ function addRow(count,type,numero,precio,nombre) {
   $("#precio").val("");
 };
 
+
+function currentTime() {
+  var date = new Date(); /* creating object of Date class */
+  var hour = date.getHours();
+  var min = date.getMinutes();
+  var sec = date.getSeconds();
+  hour = updateTime(hour);
+  min = updateTime(min);
+  sec = updateTime(sec); document.getElementById("clock").innerText = hour + " : " + min + " : " + sec; /* adding time to the div */
+  setTimeout( function(){ currentTime()},1000); /* setting timer */
+}
+
+function updateTime(k) {
+  if (k < 10) 
+   k= "0" + k;
+  
+  
+    return k;
+  
+}
+
+currentTime(); /* calling currentTime() function to initiate the process */
+
 function date() {
-    
+  var days = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
 var today = new Date();
+
+
+var n = today.getDay();
+
+var dayDiv = $("h2").text(days[n]);
+$("#day").append(dayDiv);
 
 var day = today.getDate();
 var month = today.getMonth() + 1;
@@ -112,3 +143,4 @@ var out = document.getElementById("date");
 
 out.innerHTML = month + "/" + day + "/" + year;
 };
+

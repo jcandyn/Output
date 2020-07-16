@@ -151,22 +151,38 @@ margin: 1rem;
       }
 
       th {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
 
       td {
+        font-size: 2.5rem;
+      }
+
+      #clock{
+        font-family: arial;
         font-size: 2rem;
+        text-align: center;
+        padding-top : 40px
+          
+      }
+
+      #mainBtn {
+        width:auto;
+        height: auto;
+        font-size: 1rem;
+      }
+
+      hr.hr-13 {
+        height: 10px;
+        border: 0;
+        box-shadow: 0 10px 10px -10px #8c8c8c inset;
       }
   }
 
-  #mainBtn {
-    width:auto;
-    height: auto;
-    font-size: 1rem;
-  }
 
-  hr.hr-13 {
-    height: 10px;
-    border: 0;
-    box-shadow: 0 10px 10px -10px #8c8c8c inset;
-  }
+
+
+
+  
+
+  
