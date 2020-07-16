@@ -2,6 +2,7 @@
 
 
   $( document ).ready(function() {
+    changeColorofButton();
    readDatabase();
   
 
@@ -180,4 +181,13 @@ updateTicketNumber(ticketNumber + 1);
 function updateTicketNumber(ticketNumber) {
  
 $("#ticketNumber").text("Ticket #: " + ticketNumber);
+}
+
+function changeColorofButton() {
+
+
+  $(".typeBtn").on( "click", function() {
+ $(".typeBtn").removeClass("redBtn");
+  $(this).addClass("redBtn");
+});
 }

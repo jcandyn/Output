@@ -205,6 +205,6 @@ margin: 1rem;
 
   
 
-  .typeBtn:focus {
+  .redBtn {
     background-color: red !important;
   }
