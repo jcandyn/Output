@@ -31,7 +31,7 @@
         newPrecio = (Number(newPrecio) + Number(precio));
         $("#totalPrice").text("$" + newPrecio + ".00");
         
-         addRow(count,type,numero,precio,nombre);
+         addRow(count,type,numero,precio);
         }
         
         
@@ -81,7 +81,7 @@ function generateSerial() {
   
     
 
-function addRow(count,type,numero,precio,nombre) {
+function addRow(count,type,numero,precio) {
   
  
     // if (nombre.length !== 0) {
@@ -98,8 +98,6 @@ function addRow(count,type,numero,precio,nombre) {
   
   );
 
-  
-
   // Append the new row to the table
   $("#ticket-table > tbody").append(newRow);
 
@@ -107,6 +105,8 @@ function addRow(count,type,numero,precio,nombre) {
   $("#nombre").val("");
    $("#numero").val("");
   $("#precio").val("");
+
+  
 };
 
 
