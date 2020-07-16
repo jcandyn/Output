@@ -113,6 +113,8 @@ html {
   .inputForInfo {
 margin: 1rem;
   }
+
+
   
   @media only screen and (min-width: 768px) {
       .btn {
@@ -173,18 +175,16 @@ margin: 1rem;
       #mainBtn {
         width:auto;
         height: auto;
-        font-size: 1rem;
+        font-size: 2rem;
       }
 
-      hr.hr-13 {
-        height: 10px;
-        border: 0;
-        box-shadow: 0 10px 10px -10px #8c8c8c inset;
-      }
+   
 
       #typeTicketText {
         font-weight:700; 
       }
+
+
   }
 
 

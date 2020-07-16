@@ -63,9 +63,9 @@ function generateSerial() {
         
     }
 
-    var serialNumber = $("h3").text("Serial: " + randomSerial);
+    $("#serial").text("Serial: " + randomSerial);
     
-    $("#serial").append(serialNumber);
+   
 };
     
   
