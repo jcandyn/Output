@@ -19,7 +19,7 @@
         let numero = $("#numero").val();
         let precio = $("#precio").val();
 
-        if (type !== "" && numero !== "" && precio !== "") {
+        if (type.length !== "0" && numero.length !== "0" && precio.length !== "0") {
           if (count == 0) {
             generateSerial();
           
