@@ -12,20 +12,29 @@
     let newPrecio = 0;
     $( "#mainBtn").on( "click", function(event) {
         event.preventDefault();
-        if (count == 0) {
-        generateSerial();
-      
-        }
-        count++
-        $("#totalCount").text(count);
+
         let type = $("#type").val().toUpperCase();
-        let nombre = $("#nombre").val();
+        // let nombre = $("#nombre").val();
         let numero = $("#numero").val();
         let precio = $("#precio").val();
+
+        if (type !== "" && numero !== "" && precio !== "") {
+          if (count == 0) {
+            generateSerial();
+          
+            }
+            count++
+            $("#totalCount").text(count);
+
+
         newPrecio = (Number(newPrecio) + Number(precio));
-       $("#totalPrice").text("$" + newPrecio + ".00");
+        $("#totalPrice").text("$" + newPrecio + ".00");
+        
+         addRow(count,type,numero,precio,nombre);
+        }
+        
+        
        
-        addRow(count,type,numero,precio,nombre);
       });
 
       $(".typeBtn").on( "click", function() {
